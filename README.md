@@ -29,11 +29,14 @@ Se marcó a la totalidad de individuos encontrados en cada parcela de muestreo e
 _Dinámica de la población_
 
 Para determinar la tasa de crecimiento de la población se utilizaron modelos matriciales de proyección poblacional. El modelo matricial se resuelve como: n(t+1) = Ant, donde nt y n(t+1) representan el número de individuos en cada categoría de tamaño en el tiempo t y t+1, y donde A es la matriz de proyección que contiene las probabilidades de transición de una categoría a la otra en el periodo de tiempo evaluado (Hal Caswell, 2001). Se construyó una matriz Lefkovitch de dimensión 6  6 (Lefkovitch, 1965), 1965). Dado que perímetro basal y altura resultaron significativamente correlacionados, y se encontró menor variabilidad en el aumento de perímetro basal de los individuos, se utilizó el perímetro basal como variable para describir el crecimiento poblacional. Los intervalos del perímetro basal y su equivalente en estado de desarrollo para la clasificación de 6 clases de la población de mangle son: 1) 1cm-plántula; 2) 2-4 cm-juvenil; 3) 5-6 cm-adulto 1; 4) 7-9 cm-adulto 2; 5) 10-29 cm-adulto 3; 6) ≥ 30 cm-adulto 4. El modelo matricial de Lefkovitch está formado por un vector columnar n(t) y una matriz (A={aij}) que toma la siguiente forma:
+
+A = 
+
 	P11	F21	F31	F41	F51	F61		n(t)
   
 	C12	P22	0	0	0	0		n(t)
   
-A =	0	C23	P33	0	0	0	x	n(t)
+	0	C23	P33	0	0	0	x	n(t)
 
 	0	0	C34	P44	0	0		n(t)
   
